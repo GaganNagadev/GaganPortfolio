@@ -44,15 +44,15 @@ nav {
   width: 30%;
   height: 100vh; 
   background: #5B75AC;
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 1.3;
+  padding-left: 1%;
+  padding-right: 1%;
+  line-height: 150%;
 }
     
 social{
   position:absolute;
-  padding-left: 100px;
-  padding-top: 20px;
+  padding-left: 7%;
+  padding-top: 1%;
 }
     
 nav ul {
@@ -69,17 +69,23 @@ section:after {
     
 footer {
   background-color: #777;
-  padding: 10px;
+  padding: 20%;
   text-align: center;
   color: white;
 }    
 
-    
+article {
+  float: left;
+  padding: 20%;
+  width: 70%;
+  height: 90vh;
+  background-color: #f1f1f1;
+} 
     
 .fa {
   align-self: center;
-  padding: 10px;
-  font-size: 20px;
+  padding: 5%;
+  font-size: 100%;
   width: 40px;
   text-align: center;
   text-decoration: none;
@@ -113,7 +119,27 @@ footer {
   color: white;
 }
 
-
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    
+@media screen and (max-width: 768px) {
+ body {
+font-size:100%;
+}
+}
+ @media screen and (max-width: 640px) {
+ body {
+font-size:75%;
+}
+}
+ @media screen and (max-width: 480px) {
+ body {
+font-size:50%;
+}
 
 </style>
 
@@ -125,9 +151,10 @@ footer {
 
 <section>
     <nav>
-    <h1 style="text-align:center ; font-size:30px ; color: azure" class = "nav_h1_fonts"> Gagan's Portfolio </h1>
-        
-    <img src="Gagan%20N.png" alt="Avatar" style="width:180px";>
+    <div size = 80%>
+        <h1 style="text-align:center ; font-size:210% ; color: azure" class = "nav_h1_fonts"> Gagan's Portfolio </h1>
+    </div>
+    <img src="Gagan%20N.png" alt="Avatar" style="width:60%";>
     <p class="nav_fonts"; style="text-align:left ; font-size:18px ; color: azure">
                             <br><strong>Hi,</strong>
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Am Gagan N." 
@@ -136,7 +163,7 @@ footer {
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Live in Banglore."
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Am a Data Engineer."
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Went to SIT, Tumkur."
-                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Am a Digital Artist."
+                            <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I am a Digital Artist."
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Click Pictures."
                             <br>&nbsp&nbsp&nbsp&nbsp&nbsp"I Write code and (used to write) Comments."
     </p>
@@ -144,13 +171,8 @@ footer {
  
     <hr>       
     
-    <social>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-facebook"></a>          
-    </social>
 
+     
 
 
 
@@ -158,7 +180,26 @@ footer {
         
         
     </nav>
+    <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    
+        
+        
+        
+         <social>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>   
+            </social>
+    </article>
+          
+    
 </section>
+    
+
 
 </body>
     
